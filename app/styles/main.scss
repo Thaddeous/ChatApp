@@ -12,33 +12,125 @@ body {
     margin-bottom: 20px;
 }
 
+.text-muted a {
+    color: #4183C4;
+    text-decoration: none;
+}
+
+.header {
+    border-bottom: 2px solid #cccccc;
+}
+
+.header p {
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 0px;
+}
+
 .main-container {
-    border-top: 2px solid #cccccc;
     height: auto;
     width: 100%;
-    background-color: #000000;
 }
 
-.left-bar {
-    margin-top: 10px;
+.top-left-bar {
+    margin-top: 9px;
     float: left;
-    text-align: center;
-    height: 300px;
+    height: 520px;
     width: 22%;
-    background-color: #cccccc;
+    background-color: #4183C4;
+    color: #ffffff;
+    border-radius: 6px;
 }
 
-.right-bar {
+.welcome {
+    margin-top: 4px;
+    font-size: 1.6em;
+    padding: 5px;
+    text-align: center;
+}
+
+.top-right-bar {
     margin-top: 10px;
     float: right;
     text-align: center;
-    height: 300px;
+    height: auto;
     width: 77%;
-    background-color: #cccccc;
+    background-color: #eeeeee;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px #c5c5c5;
+}
+
+.input-bar {
+    padding: 0px;
+    margin: 0px;
+}
+
+.mywidth {
+    margin-top: 5px;
+    margin-bottom: 6px;
+    padding: 0px;
+    width: 87%;
+    height: 39px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px #e5e5e5;
+    border: 1px solid #cccccc;
+    color: #4183C4;
+    font-size: 18px;
+}
+
+.myheight {
+    margin-left: 6px;
+    margin-bottom: 6px;
+    padding: 0px;
+    height: 35px;
+    width: 95px;
+    border-radius: 6px;
+    background-color: #60B044;
+    color: #ffffff;
+    border: 1px solid #5CA941;
+    display: inline;
 }
 
 .clear-both {
     clear: both;
+}
+
+.bottom-right-bar {
+    margin-top: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    float: right;
+    text-align: center;
+    height: auto;
+    width: 77%;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+}
+
+.messages-container {
+    margin-top: 3px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 4px;
+    width: auto;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px #e5e5e5;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    color: #696969;
+    text-align: left;
+}
+
+.messages-container h4 {
+    display: inline;
+    color: #4183C4;
+}
+
+.messages-container span {
+    color: #5CA941;
 }
 
 .footer {
