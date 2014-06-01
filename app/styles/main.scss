@@ -6,32 +6,26 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     color: #000;
     padding: 0.2em 0;
 }
-
 body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 .text-muted a {
     color: #4183C4;
     text-decoration: none;
 }
-
 .header {
     border-bottom: 2px solid #cccccc;
 }
-
 .header p {
     margin-top: 0px;
     padding-top: 0px;
     line-height: 0px;
 }
-
 .main-container {
     height: auto;
     width: 100%;
 }
-
 .top-left-bar {
     margin-top: 9px;
     float: left;
@@ -41,14 +35,12 @@ body {
     color: #ffffff;
     border-radius: 6px;
 }
-
 .welcome {
     margin-top: 4px;
     font-size: 14px;
     padding: 2px;
     text-align: center;
 }
-
 .top-right-bar {
     margin-top: 10px;
     float: right;
@@ -59,12 +51,10 @@ body {
     border-radius: 6px;
     box-shadow: 0px 0px 5px #c5c5c5;
 }
-
 .input-bar {
     padding: 0px;
     margin: 0px;
 }
-
 .mywidth {
     margin-top: 5px;
     margin-bottom: 6px;
@@ -77,7 +67,6 @@ body {
     color: #4183C4;
     font-size: 18px;
 }
-
 .myheight {
     margin-left: 6px;
     margin-bottom: 6px;
@@ -90,11 +79,9 @@ body {
     border: 1px solid #5CA941;
     display: inline;
 }
-
 .clear-both {
     clear: both;
 }
-
 .bottom-right-bar {
     margin-top: 10px;
     padding-top: 3px;
@@ -107,7 +94,6 @@ body {
     border: 1px solid #e5e5e5;
     background-color: #f5f5f5;
 }
-
 .messages-container {
     margin-top: 3px;
     margin-bottom: 6px;
@@ -123,16 +109,13 @@ body {
     color: #696969;
     text-align: left;
 }
-
 .messages-container h4 {
     display: inline;
     color: #4183C4;
 }
-
 .messages-container span {
     color: #5CA941;
 }
-
 .footer {
     border-top: 2px solid #cccccc;
     margin-top: 10px;
