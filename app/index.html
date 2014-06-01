@@ -34,19 +34,10 @@
                 <div class="welcome">Welcome Username</div>
             </div>
             <div class="top-right-bar">
-                    
                 <textarea id = "textbox" placeholder = "The TWEATL Beetle says type here..."></textarea>
                 <button id ="send">Share</button>
                 <input type ="checkbox" id ="enter"/>
-                <label id ="mylabel">Send on Enter</label>
-
-
-
-
-
-                <!-- <div class="input-bar">
-                    <form name="input" action="demo_form_action.asp" method="get"><input class="textbox" type="text" name="user"><input class="send" type="submit" value="Share"></form>
-                </div> -->
+                <label id ="label">Send on Enter</label>
             </div>
             <div class="bottom-right-bar">
                 <div class="messages-container">
@@ -63,23 +54,21 @@
     <!-- Script starts here -->
     
     <script type="text/javascript">
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    $(function(){
+    $("#textbox").keypress(function(event){
+    if( event.which == 13){
+    if ( $("#enter").prop("checked") ){
+    console.log("enter pressed, checkbox is checked");
+    }
+    }
+    });
+    });
     </script>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
