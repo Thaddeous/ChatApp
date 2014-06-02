@@ -3,6 +3,7 @@
 var user = "TESTER";
 
 var getData = _.template($(".messagedata").text());
+// This function uses a forEach to loop through the server and pull back data
 function renderData(data){
 	data.forEach(function(alldata){
 		var renderedData = getData(alldata);
@@ -15,13 +16,26 @@ $.getJSON("http://tiny-pizza-server.herokuapp.com/collections/chat-messages").do
 	renderData(alldata);
 });
 
+// this constructor creates a new message in the proper format 
+function Message(user, message, time) {
+  this.user = user || '';
+  this.message = message || '';
+  this.time = time || '';
+  this.meta = '';
+}	
 
-function username(){
-	$(".chat-message").html("<span class = 'bug'>TweatlBug: </span>Hello, what is your name?");
-}
-
+//this below function enables a click on enter option/feature
 $(function(){
 	// username()
+
+	$("#send").click(function(){
+		var message = $("#textbox").val();
+		$("#textbox").val("");
+		var time = Date.now();
+		var newPost = new Message(user, message, time);
+		createPost(newPost);
+	});
+
     $("#textbox").keypress(function(event){
         if(event.which == 13){
         if ($("#enter").prop("checked")){
@@ -30,22 +44,40 @@ $(function(){
         }
 	}
 });
-
-    $("#send").click(function(){
-		var username = "<span class ='username' = >You: </span>"
-    	var newMessage = $("#textbox").val();
-    	$("#textbox").val("");
-    	var prevState = $(".chat-message").html();
-    		if (prevState.length > 3){
-    			prevState = prevState + "<br>";
-    		}
-    	$(".chat-message").html(prevState + username + newMessage);
-    	$(".chat-message").scrollTop($(".chat-message").prop("scrollHeight"));
-    })
 });
 
+//the post function sends new objects to the main server
+function createPost(postInfo){
+	$.post("http://tiny-pizza-server.herokuapp.com/collections/chat-messages", postInfo);
+}
+
+	
 
 
+
+
+
+
+
+
+
+
+// function username(){
+// 	$(".chat-message").html("<span class = 'bug'>TweatlBug: </span>Hello, what is your name?");
+// }
+
+//     $("#send").click(function(){
+// 		var username = "<span class ='username' = >You: </span>"
+//     	var newMessage = $("#textbox").val();
+//     	$("#textbox").val("");
+//     	var prevState = $(".chat-message").html();
+//     		if (prevState.length > 3){
+//     			prevState = prevState + "<br>";
+//     		}
+//     	$(".chat-message").html(prevState + username + newMessage);
+//     	$(".chat-message").scrollTop($(".chat-message").prop("scrollHeight"));
+//     })
+// });
 
 // var tinyServer;
 // var user = 'meh';
@@ -87,14 +119,6 @@ $(function(){
 // });
 
 // setInterval(loadChat, 1);
-
-
-
-
-
-
-
-
 
 
 // // var gives a name to the below function where we are
