@@ -1,4 +1,20 @@
 'use strict';
+ 
+var user = "TESTER";
+
+var getData = _.template($(".messagedata").text());
+function renderData(data){
+	data.forEach(function(alldata){
+		var renderedData = getData(alldata);
+		$(".messages-box").append(renderedData);
+		console.log(renderedData)
+	});
+}
+
+$.getJSON("http://tiny-pizza-server.herokuapp.com/collections/chat-messages").done(function(alldata){
+	renderData(alldata);
+});
+
 
 function username(){
 	$(".chat-message").html("<span class = 'bug'>TweatlBug: </span>Hello, what is your name?");
@@ -28,18 +44,7 @@ $(function(){
     })
 });
 
-var getData = _.template($(".messagedata").text());
-function renderData(data){
-	data.forEach(function(alldata){
-		var renderedData = getData(alldata);
-		$(".messages-box").append(renderedData);
-		console.log(renderedData)
-	});
-}
 
-$.getJSON("http://tiny-pizza-server.herokuapp.com/collections/chat-messages").done(function(alldata){
-	renderData(alldata);
-});
 
 
 // var tinyServer;

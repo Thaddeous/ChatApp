@@ -1,8 +1,10 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
+
 body {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
 }
 .top-right-menu li {
     float: right;
@@ -10,6 +12,7 @@ body {
     list-style-type: none;
     line-height: 34px;
     text-decoration: none;
+    margin-top: 13px;
 }
 .top-right-menu a {
     text-decoration: none;
@@ -24,6 +27,7 @@ body {
     text-align: center;
     line-height: 32px;
     margin-left: 10px;
+
     margin-right: 1px;
     box-shadow: 0px 0px 1px #4183C4;
     color: #ffffff;
@@ -35,10 +39,30 @@ body {
     font-size: 15px;
     text-decoration: none;
 }
+
+.text-muted {
+    margin: 0px;
+    padding: 0px;
+}
+
 .text-muted a {
     color: #4183C4;
     text-decoration: none;
+    // font-family: 'The Girl Next Door', cursive;
+    // font-family: 'Raleway', sans-serif;
+    font-size: 40px;
 }
+
+.text-muted img {
+    margin-bottom: 16px;
+}
+
+p {
+    color: #595959;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
 .header {
     border-bottom: 2px solid #cccccc;
 }
@@ -47,6 +71,7 @@ body {
     padding-top: 0px;
     line-height: 0px;
 }
+
 .main-container {
     height: auto;
     width: 100%;
@@ -145,7 +170,7 @@ body {
     margin-bottom: 6px;
     margin-left: 6px;
     margin-right: 6px;
-    padding: 4px;
+    padding: 1px 4px 2px 4px;
     width: auto;
     height: auto;
     border-radius: 6px;
@@ -157,7 +182,13 @@ body {
 
 .user {
     color: #4183C4;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 19px;
+    border-bottom: 2px solid #f1f1f1;
 }
 
 .username {
@@ -171,20 +202,18 @@ body {
 .chat-message {
     color: #696969;
     padding: 0px;
-    margin: 0px;
-}
-
-.img {
-    padding: 0px;
-    margin: 0px;
+    margin-left: 6px;
 }
     
 .time {
     color: #5CA941;
+    font-size: 11px;
+    margin-left: 1px;
 }
 
 .time img {
     padding-bottom: 1px;
+    margin-bottom: 2px;
 }
 
 .footer {
