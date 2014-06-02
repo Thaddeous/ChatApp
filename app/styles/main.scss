@@ -1,11 +1,9 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
-
 body {
     margin-top: 0px;
-    margin-bottom: 0px;  
+    margin-bottom: 0px;
 }
-
 .top-right-menu li {
     float: right;
     font-size: 16px;
@@ -38,12 +36,10 @@ body {
     font-size: 15px;
     text-decoration: none;
 }
-
 .text-muted {
     margin: 0px;
     padding: 0px;
 }
-
 .text-muted a {
     color: #4183C4;
     text-decoration: none;
@@ -51,17 +47,14 @@ body {
     // font-family: 'Raleway', sans-serif;
     font-size: 40px;
 }
-
 .text-muted img {
     margin-bottom: 16px;
 }
-
 p {
     color: #595959;
     margin-top: 0px;
     margin-bottom: 12px;
 }
-
 .header {
     border-bottom: 2px solid #cccccc;
 }
@@ -70,25 +63,36 @@ p {
     padding-top: 0px;
     line-height: 0px;
 }
-
 .main-container {
     height: auto;
     width: 100%;
 }
 .top-left-bar {
     margin-top: 9px;
+    padding: 2px;
     float: left;
     height: 540px;
     width: 22%;
     background-color: #4183C4;
     color: #ffffff;
+    border: 1px solid #4082C2;
     border-radius: 6px;
 }
-.welcome {
-    margin-top: 4px;
-    font-size: 14px;
-    padding: 2px;
+.top-left-bar img {
+    margin-bottom: 6px;
+    margin-right: 3px;
+}
+.online {
+    margin-top: 5px;
     text-align: center;
+    font-size: 13px;
+}
+.welcome {
+    margin-top: 2px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 1px solid #397BB6;
 }
 .top-right-bar {
     margin-top: 10px;
@@ -160,7 +164,7 @@ p {
     height: 434px;
     width: 77%;
     border-radius: 6px;
-    border:  1px solid #e5e5e5;
+    border: 1px solid #e5e5e5;
     background-color: #f5f5f5;
     overflow: scroll;
 }
@@ -178,7 +182,6 @@ p {
     background-color: #ffffff;
     text-align: left;
 }
-
 .user {
     color: #4183C4;
     margin-bottom: 5px;
@@ -189,32 +192,28 @@ p {
     font-size: 19px;
     border-bottom: 2px solid #f1f1f1;
 }
-
 .username {
     color: #4183C4;
 }
-
 .bug {
     color: #5CA941;
 }
-
 .chat-message {
     color: #696969;
-    padding: 0px;
+    padding: 1px;
     margin-left: 6px;
+    margin-right: 6px;
+    overflow: hidden;
 }
-    
 .time {
     color: #5CA941;
     font-size: 11px;
     margin-left: 1px;
 }
-
 .time img {
     padding-bottom: 1px;
     margin-bottom: 2px;
 }
-
 .footer {
     border-top: 2px solid #cccccc;
     margin-top: 10px;

@@ -1,34 +1,34 @@
 'use strict';
- 
-var user = "TESTER";
+
+var user = "Tad";
 
 var getData = _.template($(".messagedata").text());
 // This function uses a forEach to loop through the server and pull back data
-function renderData(data){
-	data.forEach(function(alldata){
+function renderData(data) {
+	data.forEach(function(alldata) {
 		var renderedData = getData(alldata);
 		$(".messages-box").append(renderedData);
 		console.log(renderedData)
 	});
 }
 
-$.getJSON("http://tiny-pizza-server.herokuapp.com/collections/chat-messages").done(function(alldata){
+$.getJSON("http://tiny-pizza-server.herokuapp.com/collections/chat-messages").done(function(alldata) {
 	renderData(alldata);
 });
 
 // this constructor creates a new message in the proper format 
 function Message(user, message, time) {
-  this.user = user || '';
-  this.message = message || '';
-  this.time = time || '';
-  this.meta = '';
-}	
+	this.user = user || '';
+	this.message = message || '';
+	this.time = time || '';
+	this.meta = '';
+}
 
 //this below function enables a click on enter option/feature
-$(function(){
+$(function() {
 	// username()
 
-	$("#send").click(function(){
+	$("#send").click(function() {
 		var message = $("#textbox").val();
 		$("#textbox").val("");
 		var time = Date.now();
@@ -36,29 +36,20 @@ $(function(){
 		createPost(newPost);
 	});
 
-    $("#textbox").keypress(function(event){
-        if(event.which == 13){
-        if ($("#enter").prop("checked")){
-			$("#send").click();
-			event.preventDefault();
-        }
-	}
-});
+	$("#textbox").keypress(function(event) {
+		if (event.which == 13) {
+			if ($("#enter").prop("checked")) {
+				$("#send").click();
+				event.preventDefault();
+			}
+		}
+	});
 });
 
 //the post function sends new objects to the main server
-function createPost(postInfo){
+function createPost(postInfo) {
 	$.post("http://tiny-pizza-server.herokuapp.com/collections/chat-messages", postInfo);
 }
-
-	
-
-
-
-
-
-
-
 
 
 

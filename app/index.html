@@ -31,7 +31,8 @@
         </div>
         <div class="main-container">
             <div class="top-left-bar">
-                <div class="welcome">Welcome Username</div>
+                <div class="welcome"><img src="/images/profile.jpeg" height="18">Hello Tad</div>
+                <div class="online">Users Online</div>
             </div>
             <div class="top-right-bar">
                 <textarea id = "textbox" placeholder = "TweatlBug says type here..."></textarea>
@@ -41,7 +42,6 @@
             </div>
             <div class="bottom-right-bar-box">
                 <div class="messages-box">
-
                 </div>
             </div>
         </div>
@@ -54,16 +54,13 @@
     <!-- Script starts here -->
     
     <script type="text/template" class="messagedata">
-        <div class="messages-container">
-            <div class="user"><strong><%=user%></strong></div>
-            <div class="chat-message"><%=message%></div>
-            <div class="time"><img src="images/clock.jpeg" height="26" width="26"><%=moment((parseInt(time))).format('dddd h:mm a')%></div>
-
-            
-        </div>
+    <div class="messages-container">
+        <div class="user"><strong><%=user%></strong></div>
+        <div class="chat-message"><%=message%></div>
+        <div class="time"><img src="images/clock.jpeg" height="26" width="26"><%=moment((parseInt(time))).format('dddd h:mm a')%></div>
+        
+    </div>
     </script>
-
-
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/jquery.js"></script>
