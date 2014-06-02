@@ -34,14 +34,14 @@
                 <div class="welcome">Welcome Username</div>
             </div>
             <div class="top-right-bar">
-                <textarea id = "textbox" placeholder = "The TWEATL Beetle says type here..."></textarea>
+                <textarea id = "textbox" placeholder = "TweatlBug says type here..."></textarea>
                 <button id ="send">Share</button>
-                <input type ="checkbox" id ="enter"/>
+                <input checked type ="checkbox" id ="enter"/>
                 <label id ="label">Send on Enter</label>
             </div>
-            <div class="bottom-right-bar">
-                <div class="messages-container">
-                    <h4>Username: </h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.<span><strong> Time sent: </strong></span>
+            <div class="bottom-right-bar-box">
+                <div class="messages-box">
+
                 </div>
             </div>
         </div>
@@ -53,22 +53,20 @@
     
     <!-- Script starts here -->
     
-    <script type="text/javascript">
-    
-    $(function(){
-    $("#textbox").keypress(function(event){
-    if( event.which == 13){
-    if ( $("#enter").prop("checked") ){
-    console.log("enter pressed, checkbox is checked");
-    }
-    }
-    });
-    });
+    <script type="text/template" class="messagedata">
+        <div class="messages-container">
+            <div class="user"><strong><%=user%></strong></div>
+            <div class="chat-message"><%=message%></div>
+            <div class="time"><img src="images/clock.jpeg" height="26" width="26"><%=moment((parseInt(time))).format('dddd h:mm a')%></div>
+        </div>
     </script>
+
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/momentjs/moment.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
