@@ -19,12 +19,18 @@
     <!-- endbuild -->
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
-<body
+<!--
+   __  ___     _        __ __________  _____ 
+  /  |/  /__ _(_)__    / // /_  __/  |/  / / 
+ / /|_/ / _ `/ / _ \  / _  / / / / /|_/ / /__
+/_/  /_/\_,_/_/_//_/ /_//_/ /_/ /_/  /_/____/
+
+-->
+<body>
     <div class="container">
         <div class="header">
             <ul class="top-right-menu">
                 <li><a href="#"><div class="sign-in">Sign In</div></a></li>
-                <li><a href="http://www.clusterfunctor.com">About</a></li>
             </ul>
             <div class="text-muted"><a href=""><strong>TWEATL</strong></a><img src="/images/beetle.png" height="38"></div>
             <p>Talk Without Ever Appearing Thunderously Loud</p>
@@ -50,16 +56,19 @@
             <p>Yours forever, the clusterFunctor( ) team</p>
         </div>
     </div>
-    
-    <!-- Script starts here -->
-    
+<!--  
+   ____        _      __    ______               __     __        
+  / __/_______(_)__  / /_  /_  __/__ __ _  ___  / /__ _/ /____ ___
+ _\ \/ __/ __/ / _ \/ __/   / / / -_)  ' \/ _ \/ / _ `/ __/ -_|_-<
+/___/\__/_/ /_/ .__/\__/   /_/  \__/_/_/_/ .__/_/\_,_/\__/\__/___/
+             /_/                        /_/                       
+-->
     <script type="text/template" class="messagedata">
-    <div class="messages-container">
-        <div class="user"><strong><%=user%></strong></div>
-        <div class="chat-message"><%=message%></div>
-        <div class="time"><img src="images/clock.jpeg" height="26" width="26"><%=moment((parseInt(time))).format('dddd h:mm a')%></div>
-        
-    </div>
+        <div class="messages-container">
+            <div class="user"><strong><%=user%></strong></div>
+            <div class="chat-message"><%=message%></div>
+            <div class="time"><img src="images/clock.jpeg" height="26" width="26"><%=moment((parseInt(time))).format('dddd h:mm a')%></div>
+        </div>
     </script>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

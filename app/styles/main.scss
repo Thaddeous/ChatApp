@@ -4,6 +4,14 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+.clear-both {
+    clear: both;
+}
+//    __ __            __       
+//   / // /__ ___ ____/ /__ ____
+//  / _  / -_) _ `/ _  / -_) __/
+// /_//_/\__/\_,_/\_,_/\__/_/   
+//  
 .top-right-menu li {
     float: right;
     font-size: 16px;
@@ -43,8 +51,6 @@ body {
 .text-muted a {
     color: #4183C4;
     text-decoration: none;
-    // font-family: 'The Girl Next Door', cursive;
-    // font-family: 'Raleway', sans-serif;
     font-size: 40px;
 }
 .text-muted img {
@@ -67,6 +73,11 @@ p {
     height: auto;
     width: 100%;
 }
+//    __       _____    ___          __       
+//   / /  ___ / _/ /_  / _ )___  ___/ /_ __   
+//  / /__/ -_) _/ __/ / _  / _ \/ _  / // /   
+// /____/\__/_/ \__/ /____/\___/\_,_/\_, /    
+//                                  /___/   
 .top-left-bar {
     margin-top: 9px;
     padding: 6px;
@@ -94,6 +105,12 @@ p {
     text-align: center;
     border-bottom: 1px solid #397BB6;
 }
+//    ___  _      __   __    ___          __       
+//   / _ \(_)__ _/ /  / /_  / _ )___  ___/ /_ __   
+//  / , _/ / _ `/ _ \/ __/ / _  / _ \/ _  / // /   
+// /_/|_/_/\_, /_//_/\__/ /____/\___/\_,_/\_, /    
+//        /___/                          /___/ 
+//  
 .top-right-bar {
     margin-top: 10px;
     float: right;
@@ -152,9 +169,12 @@ p {
 #send:hover {
     box-shadow: 0px 0px 6px #60B044;
 }
-.clear-both {
-    clear: both;
-}
+//    __  ___                            
+//   /  |/  /__ ___ ___ ___ ____ ____ ___
+//  / /|_/ / -_|_-<(_-</ _ `/ _ `/ -_|_-<
+// /_/  /_/\__/___/___/\_,_/\_, /\__/___/
+//                         /___/ 
+//        
 .messages-box {
     margin-top: 10px;
     padding-top: 3px;
